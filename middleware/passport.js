@@ -1,6 +1,6 @@
 const passport = require('passport');
 const {Strategy} = require('passport-local');
-const User = require('../models')
+const {User} = require('../models')
 const md5 = require('md5')
 
 async function authenticate(username, password, done) {
